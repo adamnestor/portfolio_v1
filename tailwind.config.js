@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: {
-          900: "#0a192f",
-          800: "#112240",
-          700: "#233554",
+        brand: {
+          light: "#D4E4F6", // Light blue
+          blue: "#00ABE4", // Bright blue
+          white: "#FFFFFF", // White
         },
-        slate: {
-          400: "#8892b0",
-          300: "#a8b2d1",
-          200: "#ccd6f6",
+        // Recommended complementary text colors:
+        text: {
+          dark: "#1E375A", // Dark slate blue for primary text
+          muted: "#475569", // Medium slate for secondary text
+          light: "#94A3B8", // Light slate for subtle text
         },
       },
     },
