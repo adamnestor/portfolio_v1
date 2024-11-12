@@ -12,8 +12,8 @@ export default {
         // Recommended complementary text colors:
         text: {
           dark: "#1E375A", // Dark slate blue for primary text
-          muted: "#475569", // Medium slate for secondary text
-          light: "#94A3B8", // Light slate for subtle text
+          muted: "#334155", // Medium slate for secondary text
+          light: "#475569", // Light slate for subtle text
         },
       },
     },
