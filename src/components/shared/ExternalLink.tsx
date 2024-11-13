@@ -18,7 +18,7 @@ const ExternalLink = ({
     >
       {children}
       <svg
-        className="w-4 h-4"
+        className="w-4 h-4 transform transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"

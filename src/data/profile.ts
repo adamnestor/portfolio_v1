@@ -18,9 +18,9 @@ export interface Profile {
 }
 
 export const profileData: Profile = {
-  name: "Brittany Chiang",
-  title: "Front End Engineer",
+  name: "Adam Nestor",
+  title: "Full Stack Developer",
   description:
     "I build accessible, pixel-perfect digital experiences for the web.",
-  imagePath: "/40.jpg",
+  imagePath: "/tempPic.jpg",
 };

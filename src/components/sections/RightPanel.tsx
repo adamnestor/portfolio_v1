@@ -4,8 +4,8 @@ import ProjectList from "./projects/ProjectList";
 const RightPanel = () => {
   return (
     <div className="pt-16">
-      {/* Opening paragraph aligned with name */}
-      <div className="text-slate-medium space-y-4 mb-24">
+      {/* About section */}
+      <section id="about" className="text-slate-medium space-y-4 mb-24">
         <p>
           I'm a developer passionate about crafting accessible, pixel-perfect
           user interfaces that blend thoughtful design with robust engineering.
@@ -24,13 +24,17 @@ const RightPanel = () => {
           development gives me a unique perspective on creating user-focused
           solutions that actually solve real classroom challenges.
         </p>
-      </div>
+      </section>
 
       {/* Experience Section */}
-      <ExperienceList />
+      <section id="experience" className="mb-24">
+        <ExperienceList />
+      </section>
 
       {/* Projects Section */}
-      <ProjectList />
+      <section id="projects" className="mb-24">
+        <ProjectList />
+      </section>
     </div>
   );
 };
