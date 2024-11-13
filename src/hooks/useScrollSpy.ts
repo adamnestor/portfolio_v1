@@ -25,7 +25,7 @@ export const useScrollSpy = () => {
         // When element is 40% visible, trigger the callback
         threshold: 0.4,
         // Add some margin to trigger slightly before the element reaches the top
-        rootMargin: "-20% 0px -60% 0px",
+        rootMargin: "-10% 0px -10% 0px",
       }
     );
 
