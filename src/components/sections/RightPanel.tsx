@@ -1,4 +1,3 @@
-import React from "react";
 import ExperienceList from "./experience/ExperienceList";
 import ProjectList from "./projects/ProjectList";
 
