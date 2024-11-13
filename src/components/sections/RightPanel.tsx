@@ -1,4 +1,6 @@
+import React from "react";
 import ExperienceList from "./experience/ExperienceList";
+import ProjectList from "./projects/ProjectList";
 
 const RightPanel = () => {
   return (
@@ -18,10 +20,7 @@ const RightPanel = () => {
       <ExperienceList />
 
       {/* Projects Section */}
-      <section id="projects">
-        <h2 className="text-slate-dark text-2xl font-medium mb-8">Projects</h2>
-        {/* Projects content coming soon */}
-      </section>
+      <ProjectList />
     </div>
   );
 };
