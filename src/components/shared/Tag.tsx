@@ -1,5 +1,3 @@
-import React from "react";
-
 interface TagProps {
   label: string;
   className?: string;

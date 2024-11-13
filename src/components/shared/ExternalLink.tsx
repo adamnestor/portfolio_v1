@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ExternalLinkProps {
   href: string;
   children: React.ReactNode;
