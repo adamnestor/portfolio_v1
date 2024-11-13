@@ -1,4 +1,6 @@
 import { Project } from "../../../data/projects";
+import Tag from "../../shared/Tag";
+import ExternalLink from "../../shared/ExternalLink";
 
 interface ProjectCardProps {
   project: Project;
@@ -19,33 +21,20 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           />
         </div>
         <div className="flex-1">
-          <h3 className="text-slate-dark text-xl mb-1 inline-flex items-center gap-2 group-hover:text-orange-primary">
-            {project.title}
-            <svg
-              className="w-4 h-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
+          <h3 className="text-slate-dark text-xl mb-1">
+            <ExternalLink
+              href={project.link}
+              className="group-hover:text-orange-primary"
             >
-              <path
-                d="M7 17L17 7M17 7H7M17 7V17"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+              {project.title}
+            </ExternalLink>
           </h3>
           <p className="text-slate-medium group-hover:text-slate-dark mb-4">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
-              <span
-                key={tech}
-                className="px-4 py-1.5 rounded-full bg-orange-light text-orange-primary group-hover:bg-white text-sm transition-colors"
-              >
-                {tech}
-              </span>
+              <Tag key={tech} label={tech} />
             ))}
           </div>
         </div>
