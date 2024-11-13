@@ -22,5 +22,5 @@ export const profileData: Profile = {
   title: "Front End Engineer",
   description:
     "I build accessible, pixel-perfect digital experiences for the web.",
-  imagePath: "/placeholder-profile.jpg",
+  imagePath: "/40.jpg",
 };
