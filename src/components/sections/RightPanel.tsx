@@ -13,6 +13,17 @@ const RightPanel = () => {
           clear, intuitive user experiences and collaborating effectively with
           teams.
         </p>
+        <p>
+          Beyond my role in education, I'm passionate about creating intuitive
+          digital experiences that bridge technology and learning. When I'm not
+          coding or teaching, you'll find me exploring new web technologies,
+          contributing to open-source education projects, or mentoring aspiring
+          developers. I believe in the power of combining educational insights
+          with technical expertise to build tools that make learning more
+          accessible and engaging. My background in both education and software
+          development gives me a unique perspective on creating user-focused
+          solutions that actually solve real classroom challenges.
+        </p>
       </div>
 
       {/* Experience Section */}
