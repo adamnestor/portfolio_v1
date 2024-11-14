@@ -14,7 +14,7 @@ const Navigation = () => {
     if (targetElement) {
       const headerHeight = 80;
       const targetTop = targetElement.getBoundingClientRect().top;
-      const scrollToY = window.pageYOffset + targetTop - headerHeight;
+      const scrollToY = window.scrollY + targetTop - headerHeight;
 
       window.scrollTo({
         top: scrollToY,
