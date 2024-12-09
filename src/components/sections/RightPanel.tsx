@@ -7,22 +7,28 @@ const RightPanel = () => {
       {/* About section */}
       <section id="about" className="text-slate-medium space-y-4 mb-24">
         <p>
-          I'm a developer passionate about crafting accessible, pixel-perfect
-          user interfaces that blend thoughtful design with robust engineering.
-          My teaching background gives me a unique perspective on creating
-          clear, intuitive user experiences and collaborating effectively with
-          teams.
+          I'm a full-stack developer who thrives on solving complex
+          communication challenges through innovative software solutions.
+          Currently, I'm developing an AI-powered messaging platform, where I
+          integrate external APIs and architect scalable systems using Java,
+          Spring Boot, and React.
         </p>
         <p>
-          Beyond my role in education, I'm passionate about creating intuitive
-          digital experiences that bridge technology and learning. When I'm not
-          coding or teaching, you'll find me exploring new web technologies,
-          contributing to open-source education projects, or mentoring aspiring
-          developers. I believe in the power of combining educational insights
-          with technical expertise to build tools that make learning more
-          accessible and engaging. My background in both education and software
-          development gives me a unique perspective on creating user-focused
-          solutions that actually solve real classroom challenges.
+          My background in education and philosophy has honed my ability to
+          break down complex technical concepts and communicate effectively
+          across teams. I bring this skill to every aspect of development,
+          whether I'm debugging intricate issues or designing new features,
+          focusing on delivering elegant, maintainable code that drives business
+          value.
+        </p>
+        <p>
+          At my core, I'm passionate about building robust applications using
+          modern technologies like TypeScript, RESTful APIs, and SQL, while
+          following industry best practices with Git and Docker. My experience
+          teaching has strengthened my ability to collaborate and adapt quickly
+          in fast-paced environments. I'm ready to bring this unique combination
+          of technical expertise and clear communication to your next
+          challenging project.
         </p>
       </section>
 
