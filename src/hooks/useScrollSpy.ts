@@ -4,7 +4,7 @@ export const useScrollSpy = () => {
   const [activeSection, setActiveSection] = useState<string>("about");
 
   useEffect(() => {
-    const sections = ["about", "experience", "projects"]
+    const sections = ["about", "projects", "experience"]
       .map((id) => document.getElementById(id))
       .filter((section): section is HTMLElement => section !== null);
 
@@ -22,8 +22,8 @@ export const useScrollSpy = () => {
       {
         // Root is the scrollable container (right panel)
         root: null, // null means use viewport
-        // When element is 40% visible, trigger the callback
-        threshold: 0.4,
+        // When element is 30% visible, trigger the callback
+        threshold: 0.3,
         // Add some margin to trigger slightly before the element reaches the top
         rootMargin: "-10% 0px -10% 0px",
       }

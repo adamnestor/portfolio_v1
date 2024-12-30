@@ -32,14 +32,13 @@ const RightPanel = () => {
         </p>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="mb-24">
-        <ExperienceList />
-      </section>
-
       {/* Projects Section */}
       <section id="projects" className="mb-24">
         <ProjectList />
+      </section>
+      {/* Experience Section */}
+      <section id="experience" className="mb-24">
+        <ExperienceList />
       </section>
     </div>
   );
