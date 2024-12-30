@@ -8,7 +8,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "CourtVision",
+    title: "In Development: CourtVision",
     description:
       "CourtVision is a real-time NBA statistics analysis tool that helps users identify statistical performance patterns by calculating hit rates and a confidence score for points, assists, and rebounds across different time periods. The platform features an intuitive dashboard displaying today's games with associated player stats, detailed player analysis views with performance visualizations, and the ability to save both single picks and parlays while tracking their accuracy over time.",
     image: "/CV.jpg",
