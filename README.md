@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features a clean split-layout design with smooth scrolling navigation and interactive section highlighting.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Split Layout**: Clean, modern design with fixed left panel and scrollable right content
+- **Interactive Navigation**: Smooth scrolling with automatic section highlighting using scroll spy
+- **Section Organization**:
+  - About: Personal introduction and skills
+  - Projects: Showcase of development work
+  - Experience: Professional background
+  - Education: Academic background and qualifications
+- **TypeScript Integration**: Full type safety throughout the application
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- Tailwind CSS
+- Vite (Build tool)
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+├── components/
+│   ├── identity/          # Components for personal information
+│   ├── layout/            # Layout components including split view
+│   ├── sections/          # Main content section components
+│   │   ├── education/     # Education section components
+│   │   ├── experience/    # Experience section components
+│   │   └── projects/      # Project section components
+│   └── shared/            # Reusable components
+├── data/                  # Data files for projects, experience, etc.
+├── hooks/                 # Custom React hooks including scroll spy
+├── styles/               # Global styles and Tailwind configuration
+└── types/                # TypeScript type definitions
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+The site is organized in a split-panel layout:
+- Left panel: Fixed navigation and profile information
+- Right panel: Scrollable content sections
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Navigation automatically highlights the current section as you scroll through the content, providing a smooth and intuitive user experience.
+
+## Development
+
+This project uses:
+- Vite for fast development and optimized builds
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Custom hooks for scroll behavior
+
+To modify content, update the corresponding files in the `data/` directory.
