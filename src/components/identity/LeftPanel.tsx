@@ -1,6 +1,7 @@
 import Profile from "./Profile";
 import Navigation from "./Navigation";
 import SocialLinks from "./SocialLinks";
+import ExternalLink from "../shared/ExternalLink";
 import { profileData, socialLinks } from "../../data/profile";
 
 const LeftPanel = () => {
@@ -14,8 +15,14 @@ const LeftPanel = () => {
 
       <Navigation />
 
-      <div className="mt-20">
+      <div className="mt-20 flex items-center gap-8">
         <SocialLinks links={socialLinks} />
+        <ExternalLink
+          href="/path-to-your-resume.pdf"
+          className="text-slate-medium text-xl font-medium hover:text-orange-primary transition-colors duration-300"
+        >
+          View Full Résumé
+        </ExternalLink>
       </div>
     </div>
   );
