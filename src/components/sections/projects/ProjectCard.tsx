@@ -10,6 +10,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <a
       href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
       className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover"
     >
       <div className="flex gap-6">

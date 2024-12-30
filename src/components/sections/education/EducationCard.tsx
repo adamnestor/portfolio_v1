@@ -21,6 +21,8 @@ const EducationCard = ({
   return (
     <a
       href={schoolUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover"
     >
       <div className="grid grid-cols-[140px_1fr] gap-4 pr-8">
