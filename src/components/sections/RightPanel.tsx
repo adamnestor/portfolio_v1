@@ -1,3 +1,4 @@
+import EducationList from "./education/EducationList";
 import ExperienceList from "./experience/ExperienceList";
 import ProjectList from "./projects/ProjectList";
 
@@ -39,6 +40,9 @@ const RightPanel = () => {
       {/* Experience Section */}
       <section id="experience" className="mb-24">
         <ExperienceList />
+      </section>
+      <section id="education" className="mb-24">
+        <EducationList />
       </section>
     </div>
   );

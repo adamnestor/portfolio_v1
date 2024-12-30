@@ -4,7 +4,7 @@ export const useScrollSpy = () => {
   const [activeSection, setActiveSection] = useState<string>("about");
 
   useEffect(() => {
-    const sections = ["about", "projects", "experience"]
+    const sections = ["about", "projects", "experience", "education"]
       .map((id) => document.getElementById(id))
       .filter((section): section is HTMLElement => section !== null);
 
