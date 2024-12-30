@@ -15,7 +15,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover"
     >
       <div className="flex gap-6">
-        <div className="w-24 h-16 rounded overflow-hidden bg-slate-light">
+        <div className="w-28 h-20 rounded overflow-hidden bg-slate-light">
           <img
             src={project.image}
             alt={`${project.title} preview`}
