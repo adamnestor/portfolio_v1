@@ -8,19 +8,37 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Build a Spotify Connected App",
+    title: "CourtVision",
     description:
-      "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
+      "CourtVision is a real-time NBA statistics analysis tool that helps users identify statistical performance patterns by calculating hit rates and a confidence score for points, assists, and rebounds across different time periods. The platform features an intuitive dashboard displaying today's games with associated player stats, detailed player analysis views with performance visualizations, and the ability to save both single picks and parlays while tracking their accuracy over time.",
     image: "/test2.jpg",
-    link: "https://project-url.com",
-    technologies: ["React", "Express", "Spotify API", "Heroku"],
+    link: "",
+    technologies: [
+      "React + TypeScript",
+      "Spring Boot",
+      "MySQL",
+      "Redis",
+      "Tailwind CSS",
+      "Docker",
+      "Railway",
+      "PlanetScale",
+      "Vercel",
+    ],
   },
   {
-    title: "Virtual Lab Simulator",
+    title: "ServiceTally",
     description:
-      "Developed an interactive web-based laboratory simulation tool that allows students to conduct virtual science experiments. Features real-time data visualization, collaborative workspaces, and integration with common learning management systems. Implemented using React and Three.js for 3D renderings.",
-    image: "/test3.jpg",
-    link: "https://example.com/virtual-lab",
-    technologies: ["React", "Three.js", "WebGL", "Firebase", "Material-UI"],
+      "A Spring Boot application for tracking student service hours, enabling schools to monitor and approve student volunteer activities. The application features role-based authentication allowing administrators to manage multiple schools while students can submit and track their service progress. Built with Java, Spring Security, MySQL, and custom-designed with vanilla JavaScript and CSS.",
+    image: "/servicetally.jpg",
+    link: "https://servicetally.up.railway.app",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "Hibernate",
+      "Vanilla JS",
+      "CSS",
+      "Railway",
+    ],
   },
 ];

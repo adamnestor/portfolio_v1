@@ -6,30 +6,26 @@ const RightPanel = () => {
   return (
     <div className="pt-16">
       {/* About section */}
-      <section id="about" className="text-slate-medium space-y-4 mb-24">
+      <section id="about" className="text-slate-medium text-lg space-y-4 mb-24">
         <p>
-          I'm a full-stack developer who thrives on solving complex
-          communication challenges through innovative software solutions.
-          Currently, I'm developing an AI-powered messaging platform, where I
-          integrate external APIs and architect scalable systems using Java,
+          I’m a full-stack developer focused on solving complex challenges with
+          innovative solutions. Currently, I’m building an AI-powered messaging
+          platform, integrating APIs and developing scalable systems using Java,
           Spring Boot, and React.
         </p>
         <p>
-          My background in education and philosophy has honed my ability to
-          break down complex technical concepts and communicate effectively
-          across teams. I bring this skill to every aspect of development,
-          whether I'm debugging intricate issues or designing new features,
-          focusing on delivering elegant, maintainable code that drives business
-          value.
+          My background in education and philosophy has refined my ability to
+          break down complex concepts and communicate them clearly, whether
+          collaborating with teams or explaining technical details. I apply
+          these skills throughout development, from debugging issues to
+          designing features, always with a focus on clean, maintainable code.
         </p>
         <p>
-          At my core, I'm passionate about building robust applications using
-          modern technologies like TypeScript, RESTful APIs, and SQL, while
-          following industry best practices with Git and Docker. My experience
-          teaching has strengthened my ability to collaborate and adapt quickly
-          in fast-paced environments. I'm ready to bring this unique combination
-          of technical expertise and clear communication to your next
-          challenging project.
+          I work with a range of technologies, including Java, Spring Boot,
+          React, RESTful APIs, SQL, and TypeScript, while continuously expanding
+          my toolkit. I prioritize scalable, efficient solutions, using best
+          practices like Git and Docker to ensure robust, maintainable
+          applications.
         </p>
       </section>
 
