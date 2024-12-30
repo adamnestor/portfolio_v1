@@ -4,8 +4,8 @@ export interface SocialLink {
 }
 
 export const socialLinks: SocialLink[] = [
-  { platform: "GitHub", url: "https://github.com" },
-  { platform: "LinkedIn", url: "https://linkedin.com" },
+  { platform: "GitHub", url: "https://github.com/adamnestor" },
+  { platform: "LinkedIn", url: "https://www.linkedin.com/in/adamnestor/" },
 ];
 
 export interface Profile {

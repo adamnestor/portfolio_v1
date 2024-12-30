@@ -11,7 +11,7 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
         <a
           key={platform}
           href={url}
-          className="text-slate-medium hover:text-orange-primary"
+          className="text-slate-medium text-lg hover:text-orange-primary"
         >
           {platform}
         </a>
