@@ -8,7 +8,7 @@ const LeftPanel = () => {
     <div className="flex flex-col h-full pt-16">
       <Profile profile={profileData} />
 
-      <p className="text-slate-medium mb-12">{profileData.description}</p>
+      <p className="text-slate-medium text-xl mb-12">{profileData.description}</p>
 
       <Navigation />
 

@@ -7,7 +7,7 @@ interface ProfileProps {
 const Profile = ({ profile }: ProfileProps) => {
   return (
     <div className="flex items-center gap-4 mb-4">
-      <div className="w-20 h-20 rounded-full overflow-hidden">
+      <div className="w-28 h-28 rounded-full overflow-hidden">
         <img
           src={profile.imagePath}
           alt="Profile"
@@ -15,8 +15,8 @@ const Profile = ({ profile }: ProfileProps) => {
         />
       </div>
       <div>
-        <h1 className="text-slate-dark text-4xl font-bold">{profile.name}</h1>
-        <h2 className="text-slate-medium text-xl">{profile.title}</h2>
+        <h1 className="text-slate-dark text-5xl font-bold mb-1">{profile.name}</h1>
+        <h2 className="text-slate-medium text-2xl">{profile.title}</h2>
       </div>
     </div>
   );

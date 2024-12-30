@@ -16,14 +16,16 @@ export const education: Education[] = [
     description:
       "I completed an intensive 36-week full-stack software engineering program focusing on enterprise Java development, where I progressed from front-end fundamentals to building complex applications using Spring Framework, REST APIs, and microservices architecture. The curriculum emphasized modern development practices including test-driven development, multi-threading, and secure application design with Spring Security, while also covering advanced Java 8 features, ORM with Hibernate, and database management using MySQL. The program culminated in developing a full-scale application that integrated these enterprise-level technologies, demonstrating my ability to architect and implement production-ready software solutions.",
     technologies: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "MongoDB",
+      "Java Spring Framework",
+      "MySQL",
       "RESTful APIs",
+      "Hibernate/JPA",
       "Git",
-      "Jest",
+      "Maven",
+      "Spring Security",
+      "JavaScript",
+      "Test-Driven Development",
+      "Microservices",
     ],
   },
   {

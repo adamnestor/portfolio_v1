@@ -28,7 +28,7 @@ const EducationCard = ({
           {dateRange}
         </span>
         <div>
-          <h3 className="text-slate-dark text-xl mb-1">
+          <h3 className="text-slate-dark text-xl font-medium mb-1">
             <ExternalLink
               href={schoolUrl}
               className="group-hover:text-orange-primary"
@@ -36,11 +36,11 @@ const EducationCard = ({
               {degree}
             </ExternalLink>
           </h3>
-          <div className="text-slate-medium group-hover:text-slate-dark mb-3">
+          <div className="text-slate-medium text-lg group-hover:text-slate-dark mb-3">
             {school}
           </div>
           {description && (
-            <p className="text-slate-medium group-hover:text-slate-dark">
+            <p className="text-slate-medium text-lg group-hover:text-slate-dark">
               {description}
             </p>
           )}

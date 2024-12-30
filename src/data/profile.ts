@@ -6,8 +6,6 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
   { platform: "GitHub", url: "https://github.com" },
   { platform: "LinkedIn", url: "https://linkedin.com" },
-  { platform: "CodeSandbox", url: "https://codesandbox.io" },
-  { platform: "Instagram", url: "https://instagram.com" },
 ];
 
 export interface Profile {
@@ -21,6 +19,6 @@ export const profileData: Profile = {
   name: "Adam Nestor",
   title: "Full Stack Developer",
   description:
-    "I build accessible, pixel-perfect digital experiences for the web.",
+    "Building scalable software in Java and React, focused on clean code and clear thinking.",
   imagePath: "/tempPic.jpg",
 };

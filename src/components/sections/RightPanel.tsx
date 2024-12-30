@@ -6,7 +6,7 @@ const RightPanel = () => {
   return (
     <div className="pt-16">
       {/* About section */}
-      <section id="about" className="text-slate-medium text-lg space-y-4 mb-24">
+      <section id="about" className="text-slate-medium text-xl space-y-4 mb-24">
         <p>
           I’m a full-stack developer focused on solving complex challenges with
           innovative solutions. Currently, I’m building an AI-powered messaging

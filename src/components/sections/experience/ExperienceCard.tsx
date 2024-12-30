@@ -28,7 +28,7 @@ const ExperienceCard = ({
           {dateRange}
         </span>
         <div>
-          <h3 className="text-slate-dark text-xl mb-1">
+          <h3 className="text-slate-dark text-xl font-medium mb-1">
             <ExternalLink
               href={companyUrl}
               className="group-hover:text-orange-primary"
@@ -36,7 +36,7 @@ const ExperienceCard = ({
               {title} · {company}
             </ExternalLink>
           </h3>
-          <p className="text-slate-medium group-hover:text-slate-dark">
+          <p className="text-slate-medium text-lg group-hover:text-slate-dark">
             {description}
           </p>
           <div className="flex flex-wrap gap-2 mt-4">

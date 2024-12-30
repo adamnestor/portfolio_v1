@@ -21,7 +21,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           />
         </div>
         <div className="flex-1">
-          <h3 className="text-slate-dark text-xl mb-1">
+          <h3 className="text-slate-dark text-xl font-medium mb-1">
             <ExternalLink
               href={project.link}
               className="group-hover:text-orange-primary"
@@ -29,7 +29,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               {project.title}
             </ExternalLink>
           </h3>
-          <p className="text-slate-medium group-hover:text-slate-dark mb-4">
+          <p className="text-slate-medium text-lg group-hover:text-slate-dark mb-4">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2">
