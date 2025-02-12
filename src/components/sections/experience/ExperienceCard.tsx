@@ -26,11 +26,11 @@ const ExperienceCard = ({
       className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover"
     >
       <div className="grid grid-cols-[140px_1fr] gap-4 pr-8">
-        <span className="text-slate-light text-lg group-hover:text-slate-medium whitespace-nowrap transition-colors">
+        <span className="text-slate-light text-base group-hover:text-slate-medium whitespace-nowrap transition-colors">
           {dateRange}
         </span>
         <div>
-          <h3 className="text-slate-dark text-xl font-medium mb-1">
+          <h3 className="text-slate-dark text-lg font-medium mb-1">
             <ExternalLink
               href={companyUrl}
               className="group-hover:text-orange-primary"
@@ -38,7 +38,7 @@ const ExperienceCard = ({
               {title} · {company}
             </ExternalLink>
           </h3>
-          <p className="text-slate-medium text-lg group-hover:text-slate-dark">
+          <p className="text-slate-medium text-base group-hover:text-slate-dark">
             {description}
           </p>
           <div className="flex flex-wrap gap-2 mt-4">

@@ -25,7 +25,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="flex flex-col gap-6">
+    <nav className="space-y-4">
       {navItems.map(({ id, label }) => (
         <div key={id} className="flex items-center group">
           <div className="relative flex items-center">
@@ -50,7 +50,7 @@ const Navigation = () => {
                 handleNavClick(id);
               }}
               className={`
-                uppercase tracking-wider
+                uppercase tracking-wider text-sm
                 transition-all duration-300 ease-in-out
                 ${
                   activeSection === id

@@ -10,16 +10,16 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
   const getIcon = (platform: string) => {
     switch (platform) {
       case "GitHub":
-        return <FontAwesomeIcon icon={faGithub} size="3x" />;
+        return <FontAwesomeIcon icon={faGithub} size="2xl" />
       case "LinkedIn":
-        return <FontAwesomeIcon icon={faLinkedin} size="3x" />;
+        return <FontAwesomeIcon icon={faLinkedin} size="2xl" />
       default:
         return platform;
     }
   };
 
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-4">
       {links.map(({ platform, url }) => (
         <a
           key={platform}

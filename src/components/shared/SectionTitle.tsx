@@ -5,7 +5,7 @@ interface SectionTitleProps {
 
 const SectionTitle = ({ children, id }: SectionTitleProps) => {
   return (
-    <h2 id={id} className="text-slate-dark text-2xl font-medium mb-8">
+    <h2 id={id} className="text-slate-dark text-xl font-medium mb-8">
       {children}
     </h2>
   );
