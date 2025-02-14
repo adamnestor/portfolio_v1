@@ -1,9 +1,10 @@
 export interface Project {
   title: string;
   description: string;
-  image: string;
-  link: string;
+  thumbnailImage: string;  // Logo image
+  video: string;          // Video URL
   codeUrl: string;
+  link?: string;
   technologies: string[];
 }
 
@@ -12,7 +13,8 @@ export const projects: Project[] = [
     title: "In Development: CourtVision",
     description:
       "CourtVision is a real-time NBA statistics analysis tool that helps users identify statistical performance patterns by calculating hit rates and a confidence score for points, assists, and rebounds across different time periods. The platform features an intuitive dashboard displaying today's games with associated player stats, detailed player analysis views with performance visualizations, and the ability to save both single picks and parlays while tracking their accuracy over time.",
-    image: "/CV.jpg",
+    thumbnailImage: "/thumbnails/courtvision-thumb.jpg",
+    video: "/videos/courtvision-demo.mp4",
     codeUrl: "https://github.com/yourusername/courtvision",
     technologies: [
       "React + TypeScript",
@@ -30,7 +32,8 @@ export const projects: Project[] = [
     title: "ServiceTally",
     description:
       "A Spring Boot application for tracking student service hours, enabling schools to monitor and approve student volunteer activities. The application features role-based authentication allowing administrators to manage multiple schools while students can submit and track their service progress. Built with Java, Spring Security, MySQL, and custom-designed with vanilla JavaScript and CSS.",
-    image: "/servicetally.jpg",
+    thumbnailImage: "/thumbnails/servicetally-thumb.jpg",
+    video: "/videos/servicetally-demo.mp4",
     link: "https://servicetally.up.railway.app",
     codeUrl: "https://github.com/yourusername/servicetally",
     technologies: [
