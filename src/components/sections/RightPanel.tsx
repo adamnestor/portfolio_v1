@@ -8,7 +8,7 @@ const RightPanel = () => {
       {/* About section */}
       <section
         id="about"
-        className="text-neutral-900 text-base space-y-4 mb-24"
+        className="text-slate-dark text-base space-y-4 mb-24"
       >
         <p>
           I'm a full-stack developer focused on solving complex challenges with

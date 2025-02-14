@@ -28,7 +28,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             </h3>
             <ExternalLink
               href={project.codeUrl}
-              className="text-slate-medium hover:text-orange-primary text-base font-medium"
+              className="text-slate-dark hover:text-orange-primary text-base font-medium"
               aria-label="View source code on GitHub"
             >
               See Code
@@ -36,13 +36,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             {project.link && (
               <ExternalLink
                 href={project.link}
-                className="text-slate-medium hover:text-orange-primary text-base font-medium"
+                className="text-slate-dark hover:text-orange-primary text-base font-medium"
               >
                 Live Demo
               </ExternalLink>
             )}
           </div>
-          <p className="text-slate-medium text-base group-hover:text-slate-dark mb-4">
+          <p className="text-slate-dark text-base group-hover:text-slate-dark mb-4">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2">

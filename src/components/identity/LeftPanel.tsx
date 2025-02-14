@@ -9,7 +9,7 @@ const LeftPanel = () => {
     <div className="flex flex-col h-full pt-8">
       <Profile profile={profileData} />
 
-      <p className="text-neutral-900 text-base mb-8">
+      <p className="text-slate-dark text-base mb-8">
         {profileData.description}
       </p>
 
@@ -19,7 +19,7 @@ const LeftPanel = () => {
         <SocialLinks links={socialLinks} />
         <ExternalLink
           href="/path-to-your-resume.pdf"
-          className="text-neutral-900 text-base font-medium hover:text-orange-primary transition-colors duration-300"
+          className="text-slate-dark text-base font-medium hover:text-orange-primary transition-colors duration-300"
         >
           View Full Résumé
         </ExternalLink>

@@ -26,11 +26,11 @@ const EducationCard = ({
           <h3 className="text-slate-dark text-lg font-medium mb-1 group-hover:text-orange-primary">
             {degree}
           </h3>
-          <div className="text-slate-medium text-base group-hover:text-slate-dark mb-3">
+          <div className="text-slate-dark text-base group-hover:text-slate-dark mb-3">
             {school}
           </div>
           {description && (
-            <p className="text-slate-medium text-base group-hover:text-slate-dark">
+            <p className="text-slate-dark text-base group-hover:text-slate-dark">
               {description}
             </p>
           )}

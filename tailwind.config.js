@@ -6,7 +6,7 @@ export default {
       colors: {
         background: "#FFFFFF",
         slate: {
-          dark: "#334155", // Headers, important text
+          dark: "#1e293b", // Headers, important text
           medium: "#3B4B63", // Body text
           light: "#64748B", // Subtle text
           muted: "#CBD5E1", // Even more subtle

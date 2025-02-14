@@ -26,7 +26,7 @@ const ExperienceCard = ({
           <h3 className="text-slate-dark text-lg font-medium mb-1 group-hover:text-orange-primary">
             {title} · {company}
           </h3>
-          <p className="text-slate-medium text-base group-hover:text-slate-dark">
+          <p className="text-slate-dark text-base group-hover:text-slate-dark">
             {description}
           </p>
           <div className="flex flex-wrap gap-2 mt-4">
