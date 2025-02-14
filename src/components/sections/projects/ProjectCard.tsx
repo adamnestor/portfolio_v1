@@ -1,6 +1,8 @@
 import { Project } from "../../../data/projects";
 import Tag from "../../shared/Tag";
 import ExternalLink from "../../shared/ExternalLink";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 interface ProjectCardProps {
   project: Project;
@@ -8,12 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover"
-    >
+    <div className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover">
       <div className="flex gap-6">
         <div className="w-28 h-20 rounded overflow-hidden bg-slate-light">
           <img
@@ -23,14 +20,26 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           />
         </div>
         <div className="flex-1">
-          <h3 className="text-slate-dark text-lg font-medium mb-1">
-            <ExternalLink
-              href={project.link}
-              className="group-hover:text-orange-primary"
-            >
+          <div className="flex items-center gap-4 mb-1">
+            <h3 className="text-slate-dark text-lg font-medium group-hover:text-orange-primary">
               {project.title}
+            </h3>
+            <ExternalLink
+              href={project.codeUrl}
+              className="text-slate-medium hover:text-orange-primary text-base font-medium"
+              aria-label="View source code on GitHub"
+            >
+              See Code
             </ExternalLink>
-          </h3>
+            {project.link && (
+              <ExternalLink
+                href={project.link}
+                className="text-slate-medium hover:text-orange-primary text-base font-medium"
+              >
+                Live Demo
+              </ExternalLink>
+            )}
+          </div>
           <p className="text-slate-medium text-base group-hover:text-slate-dark mb-4">
             {project.description}
           </p>
@@ -41,7 +50,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 
