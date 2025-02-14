@@ -10,31 +10,31 @@ export const useScrollSpy = () => {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          // Only update for elements entering the viewport
-          if (entry.isIntersecting) {
-            // Get the ID of the element that's now visible
-            const visibleId = entry.target.id;
-            setActiveSection(visibleId);
-          }
-        });
+        // Get all visible sections
+        const visibleSections = entries.filter(entry => entry.isIntersecting);
+        
+        if (visibleSections.length > 0) {
+          // Get the section that is most visible
+          const mostVisible = visibleSections.reduce((prev, current) => {
+            return (prev.intersectionRatio > current.intersectionRatio) ? prev : current;
+          });
+          
+          setActiveSection(mostVisible.target.id);
+        }
       },
       {
-        // Root is the scrollable container (right panel)
-        root: null, // null means use viewport
-        // When element is 30% visible, trigger the callback
-        threshold: 0.3,
-        // Add some margin to trigger slightly before the element reaches the top
-        rootMargin: "-10% 0px -10% 0px",
+        root: null,
+        // Use multiple thresholds for more precise detection
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5],
+        // Adjust margins to better handle section transitions
+        rootMargin: "-20% 0px -20% 0px"
       }
     );
 
-    // Observe all sections
     sections.forEach((section) => {
       observer.observe(section);
     });
 
-    // Cleanup
     return () => observer.disconnect();
   }, []);
 
