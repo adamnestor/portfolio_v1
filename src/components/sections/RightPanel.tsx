@@ -9,24 +9,26 @@ const RightPanel = () => {
       <section id="about" className="text-slate-dark text-base space-y-4 mb-24">
         <h2 className="text-2xl font-semibold mb-8">About</h2>
         <p>
-          I'm a full-stack developer focused on solving complex challenges with
-          innovative solutions. Currently, I'm building an AI-powered messaging
-          platform, integrating APIs and developing scalable systems using Java,
-          Spring Boot, and React.
+          I'm a full-stack developer building applications with Java, Spring
+          Boot, and React. Currently, I'm developing an AI-integrated messaging
+          platform at We Make Good Software, where I'm building systems to
+          handle large amounts of text messages and automate responses.
         </p>
         <p>
-          My background in education and philosophy has refined my ability to
-          break down complex concepts and communicate them clearly, whether
-          collaborating with teams or explaining technical details. I apply
-          these skills throughout development, from debugging issues to
-          designing features, always with a focus on clean, maintainable code.
+          My transition from education to software development has enhanced my
+          ability to break down complex problems and explain them clearly. I use
+          these skills when designing websites, writing API endpoints, and
+          working with developers and designers. Whether building real-time
+          statistical analysis tools or secure multi-user systems, I focus on
+          writing clean, maintainable code.
         </p>
         <p>
-          I work with a range of technologies, including Java, Spring Boot,
-          React, RESTful APIs, SQL, and TypeScript, while continuously expanding
-          my toolkit. I prioritize scalable, efficient solutions, using best
-          practices like Git and Docker to ensure robust, maintainable
-          applications.
+          I work primarily with Java, Spring Boot, and React, and I'm
+          experienced with RESTful APIs, Spring Data JPA, and TypeScript. I
+          build websites with Tailwind CSS, set up user authentication systems,
+          and connect applications with external services. From processing large
+          datasets to testing code, I write programs that work well and are easy
+          to maintain.
         </p>
       </section>
 

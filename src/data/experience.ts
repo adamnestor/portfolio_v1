@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
     company: "We Make Good Software",
     companyUrl: "https://wemakegoodsoftware.com/",
     dateRange: "2023 — Present",
-    description: `I led the development of an SMS communication system using Twilio’s API, enabling course creators to automate text messaging with students. Using Spring Boot and MySQL, I built a high-volume message processing pipeline and implemented RESTful APIs and webhooks for bi-directional SMS communication. I developed the entire SMS flow, from message initiation to delivery, and collaborated closely with the team, especially the AI developer, to integrate automated responses for enhanced student engagement.`,
+    description: `I'm developing an SMS communication system using Twilio's API that enables course creators to manage text messaging with students. Using Spring Boot and MySQL, I'm building a high-volume processing pipeline with bi-directional communication through REST APIs and webhooks. I work closely with our AI team to integrate automated responses that enhance user engagement while reducing manual intervention.`,
     technologies: [
       "Java",
       "Spring Boot",
@@ -33,7 +33,7 @@ export const experiences: Experience[] = [
     company: "Lake Catholic High School",
     companyUrl: "https://www.lakecatholic.org",
     dateRange: "2021 — Present",
-    description: `I designed and implemented engaging lessons for theology courses and a philosophy elective, making abstract concepts accessible to diverse learners through thoughtful planning and creative approaches. I successfully managed complex projects, such as class retreats, coordinating logistics and communication among students, parents, and faculty. This role required adaptability, clear communication, and collaboration with multiple stakeholders to achieve meaningful outcomes in dynamic environments.`,
+    description: `I taught theology courses and a philosophy elective, breaking down difficult ideas to help students understand and engage with the material. I also planned and ran school retreats, which meant coordinating schedules and details with students, parents, and teachers. Through both teaching and retreat planning, I learned to explain complex topics clearly and work well with many different people.`,
     technologies: [
       "Lesson Design",
       "Project Management",
@@ -58,7 +58,7 @@ export const experiences: Experience[] = [
     companyUrl: "https://spsjoa.org/",
     dateRange: "2018-2020",
     description:
-      "Managed and executed large-scale events, coordinating diverse teams and adapting to evolving challenges to achieve impactful results. Demonstrated leadership in project planning, creative problem-solving, and clear communication, fostering collaboration across multiple stakeholders. Skilled at prioritizing tasks and delivering outcomes in dynamic environments, with a proven ability to train, mentor, and engage diverse audiences effectively.",
+      "Over four years as a youth minister, I ran programs that grew to 350 participants and 65 volunteers. I planned and led multi-day retreats, training sessions, and weekly activities. This meant explaining plans clearly, solving unexpected problems, and helping both new and experienced volunteers work well together.",
     technologies: [
       "Project Management",
       "Team Coordination",

@@ -1,8 +1,8 @@
 export interface Project {
   title: string;
   description: string;
-  thumbnailImage: string;  // Logo image
-  video: string;          // Video URL
+  thumbnailImage: string; // Logo image
+  video: string; // Video URL
   codeUrl: string;
   link?: string;
   technologies: string[];
@@ -10,9 +10,9 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "In Development: CourtVision",
+    title: "CourtVision",
     description:
-      "CourtVision is a real-time NBA statistics analysis tool that helps users identify statistical performance patterns by calculating hit rates and a confidence score for points, assists, and rebounds across different time periods. The platform features an intuitive dashboard displaying today's games with associated player stats, detailed player analysis views with performance visualizations, and the ability to save both single picks and parlays while tracking their accuracy over time.",
+      "CourtVision analyzes NBA player statistics to predict game performance. The application shows historical hit rates for points, assists, and rebounds, then uses this data in a custom confidence score that weighs recent games, matchup history, and team dynamics to predict tonight's games. Users can view detailed player breakdowns with performance charts and track their prediction accuracy over time.",
     thumbnailImage: "/thumbnails/courtvision-thumb.jpg",
     video: "/videos/courtvision-demo.mp4",
     codeUrl: "https://github.com/yourusername/courtvision",
@@ -20,18 +20,17 @@ export const projects: Project[] = [
       "React + TypeScript",
       "Spring Boot",
       "MySQL",
-      "Redis",
       "Tailwind CSS",
-      "Docker",
-      "Railway",
-      "PlanetScale",
-      "Vercel",
+      "Recharts",
+      "WebClient",
+      "Spring Security",
+      "Spring WebFlux",
     ],
   },
   {
     title: "ServiceTally",
     description:
-      "A Spring Boot application for tracking student service hours, enabling schools to monitor and approve student volunteer activities. The application features role-based authentication allowing administrators to manage multiple schools while students can submit and track their service progress. Built with Java, Spring Security, MySQL, and custom-designed with vanilla JavaScript and CSS.",
+      "ServiceTally helps schools manage and track student service hours. Administrators can oversee multiple schools, approve submitted hours, and manage student-admin relationships through a custom interface. Students can submit their volunteer activities and monitor their progress, with all data securely filtered based on user roles. Built as a capstone project, the application features a responsive design created with vanilla JavaScript and CSS.",
     thumbnailImage: "/thumbnails/servicetally-thumb.jpg",
     video: "/videos/servicetally-demo.mp4",
     link: "https://servicetally.up.railway.app",
