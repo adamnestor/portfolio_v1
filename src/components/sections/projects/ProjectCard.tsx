@@ -64,7 +64,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         videoUrl={project.video}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        title={project.title}
       />
     </div>
   );
