@@ -7,7 +7,7 @@ const RightPanel = () => {
     <div className="pt-16">
       {/* About section */}
       <section id="about" className="text-slate-dark text-base space-y-4 mb-24">
-        <h2 className="text-xl font-semibold mb-4">About</h2>
+        <h2 className="text-xl font-semibold mb-8">About</h2>
         <p>
           I'm a full-stack developer focused on solving complex challenges with
           innovative solutions. Currently, I'm building an AI-powered messaging
@@ -32,19 +32,19 @@ const RightPanel = () => {
 
       {/* Projects Section */}
       <section id="projects" className="mb-24">
-        <h2 className="text-xl font-semibold mb-4">Projects</h2>
+        <h2 className="text-xl font-semibold mb-8">Projects</h2>
         <ProjectList />
       </section>
 
       {/* Experience Section */}
       <section id="experience" className="mb-24">
-        <h2 className="text-xl font-semibold mb-4">Experience</h2>
+        <h2 className="text-xl font-semibold mb-8">Experience</h2>
         <ExperienceList />
       </section>
 
       {/* Education Section */}
       <section id="education" className="mb-24">
-        <h2 className="text-xl font-semibold mb-4">Education</h2>
+        <h2 className="text-xl font-semibold mb-8">Education</h2>
         <EducationList />
       </section>
     </div>
