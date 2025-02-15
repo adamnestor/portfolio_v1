@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Project } from "../../../data/projects";
 import Tag from "../../shared/Tag";
 import ExternalLink from "../../shared/ExternalLink";
@@ -11,6 +11,13 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const getLinkLabel = (projectTitle: string, linkType: 'code' | 'link') => {
+    if (projectTitle === "CourtVision") {
+      return linkType === 'code' ? "Backend Code" : "Frontend Code";
+    }
+    return linkType === 'code' ? "See Code" : "Live Demo";
+  };
 
   return (
     <div className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover">
@@ -31,14 +38,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               className="text-slate-dark hover:text-orange-primary text-base font-medium"
               aria-label="View source code on GitHub"
             >
-              See Code
+              {getLinkLabel(project.title, 'code')}
             </ExternalLink>
             {project.link && (
               <ExternalLink
                 href={project.link}
                 className="text-slate-dark hover:text-orange-primary text-base font-medium"
               >
-                Live Demo
+                {getLinkLabel(project.title, 'link')}
               </ExternalLink>
             )}
           </div>

@@ -5,10 +5,9 @@ interface VideoModalProps {
   videoUrl: string;
   isOpen: boolean;
   onClose: () => void;
-  title: string;
 }
 
-const VideoModal = ({ videoUrl, isOpen, onClose, title }: VideoModalProps) => {
+const VideoModal = ({ videoUrl, isOpen, onClose }: VideoModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<ReactPlayer>(null);
   const [isLoading, setIsLoading] = useState(true);

@@ -15,7 +15,8 @@ export const projects: Project[] = [
       "CourtVision analyzes NBA player statistics to predict game performance. The application shows historical hit rates for points, assists, and rebounds, then uses this data in a custom confidence score that weighs recent games, matchup history, and team dynamics to predict tonight's games. Users can view detailed player breakdowns with performance charts and track their prediction accuracy over time.",
     thumbnailImage: "/thumbnails/courtvision-thumb.jpg",
     video: "/videos/courtvision-demo.mp4",
-    codeUrl: "https://github.com/yourusername/courtvision",
+    codeUrl: "https://github.com/adamnestor/courtvision-backend",
+    link: "https://github.com/adamnestor/courtvision-frontend-v2",
     technologies: [
       "React + TypeScript",
       "Spring Boot",
@@ -34,7 +35,7 @@ export const projects: Project[] = [
     thumbnailImage: "/thumbnails/servicetally-thumb.jpg",
     video: "/videos/servicetally-demo.mp4",
     link: "https://servicetally.up.railway.app",
-    codeUrl: "https://github.com/yourusername/servicetally",
+    codeUrl: "https://github.com/adamnestor/serviceTally",
     technologies: [
       "Java",
       "Spring Boot",

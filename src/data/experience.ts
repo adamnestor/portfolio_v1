@@ -15,11 +15,11 @@ export const experiences: Experience[] = [
     title: "Full-Stack Developer",
     positions: [
       {
-        company: "We Make Good Software",
+        company: "Your Current Company",
         dateRange: "2023 — Present",
       },
     ],
-    description: `I'm developing an SMS communication system using Twilio's API that enables course creators to manage text messaging with students. Using Spring Boot and MySQL, I'm building a high-volume processing pipeline with bi-directional communication through REST APIs and webhooks. I work closely with our AI team to integrate automated responses that enhance user engagement while reducing manual intervention.`,
+    description: `Your description of current role and responsibilities...`,
     technologies: [
       "Java",
       "Spring Boot",
@@ -38,15 +38,15 @@ export const experiences: Experience[] = [
     title: "High School Teacher",
     positions: [
       {
-        company: "Lake Catholic High School",
-        dateRange: "2021 — Present",
+        company: "First School Name",
+        dateRange: "2021 — 2023",
       },
       {
-        company: "Cleveland Central Catholic High School",
-        dateRange: "2020-2021",
+        company: "Second School Name",
+        dateRange: "2020 — 2021",
       },
     ],
-    description: `I taught theology courses and a philosophy elective, breaking down difficult ideas to help students understand and engage with the material. I also planned and ran school retreats, which meant coordinating schedules and details with students, parents, and teachers. Through both teaching and retreat planning, I learned to explain complex topics clearly and work well with many different people.`,
+    description: `Description of your teaching experience...`,
     technologies: [
       "Lesson Design",
       "Project Management",
