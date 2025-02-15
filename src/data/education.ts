@@ -14,7 +14,7 @@ export const education: Education[] = [
     schoolUrl: "https://www.coderscampus.com/online-java-coding-bootcamp/",
     dateRange: "2023-2024",
     description:
-      "I completed an intensive 36-week full-stack software engineering program focusing on enterprise Java development, where I progressed from front-end fundamentals to building complex applications using Spring Framework, REST APIs, and microservices architecture. The curriculum emphasized modern development practices including test-driven development, multi-threading, and secure application design with Spring Security, while also covering advanced Java 8 features, ORM with Hibernate, and database management using MySQL. The program culminated in developing a full-scale application that integrated these enterprise-level technologies, demonstrating my ability to architect and implement production-ready software solutions.",
+      "I completed a 36-week full-stack software development program focused on Java and object-oriented programming. The program covered core Java concepts, Spring Boot, REST APIs, Spring Security, and MySQL with Hibernate. I learned Git workflows, JUnit testing, and Maven build tools while building web applications. Through weekly check-ins and code reviews, I built several projects including ServiceTally, my capstone application for managing student volunteer hours.",
     technologies: [
       "Java Spring Framework",
       "MySQL",
