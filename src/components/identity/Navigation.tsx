@@ -55,7 +55,7 @@ const Navigation = () => {
                 ${
                   activeSection === id
                     ? "text-orange-primary font-semibold scale-105"
-                    : "text-slate-medium font-medium hover:text-slate-dark"
+                    : "text-slate-dark font-medium hover:text-orange-primary"
                 }
               `}
             >

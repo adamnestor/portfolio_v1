@@ -19,7 +19,7 @@ const EducationCard = ({
   return (
     <div className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover">
       <div className="grid grid-cols-[140px_1fr] gap-4 pr-8">
-        <span className="text-slate-light text-base group-hover:text-slate-medium whitespace-nowrap transition-colors">
+        <span className="text-slate-medium text-base group-hover:text-slate-medium whitespace-nowrap transition-colors">
           {dateRange}
         </span>
         <div>

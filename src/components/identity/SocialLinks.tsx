@@ -26,7 +26,7 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-medium hover:text-orange-primary"
+          className="text-slate-dark hover:text-orange-primary"
           aria-label={platform}
         >
           {getIcon(platform)}
