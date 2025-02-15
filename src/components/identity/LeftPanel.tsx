@@ -18,7 +18,7 @@ const LeftPanel = () => {
       <div className="mt-auto pb-8 flex items-center gap-8">
         <SocialLinks links={socialLinks} />
         <ExternalLink
-          href="/path-to-your-resume.pdf"
+          href="/resume/AdamNestorResume.pdf"
           className="text-slate-dark text-base font-medium hover:text-orange-primary transition-colors duration-300"
         >
           View Full Résumé
