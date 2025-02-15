@@ -1,4 +1,3 @@
-import React from 'react';
 import Tag from "../../shared/Tag";
 
 interface Position {
@@ -24,7 +23,10 @@ const ExperienceCard = ({
       <div className="grid grid-cols-[140px_1fr] gap-4 pr-8">
         <div className="space-y-2">
           {positions.map(({ dateRange }) => (
-            <span key={dateRange} className="text-slate-medium text-base whitespace-nowrap">
+            <span
+              key={dateRange}
+              className="text-slate-medium text-base whitespace-nowrap"
+            >
               {dateRange}
             </span>
           ))}
