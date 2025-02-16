@@ -30,6 +30,10 @@ const RightPanel = () => {
           datasets to testing code, I write programs that work well and are easy
           to maintain.
         </p>
+        <p>
+          I'm open to new opportunities where I can apply these skills, take on
+          challenges, and continue learning
+        </p>
       </section>
 
       {/* Projects Section */}
