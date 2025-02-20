@@ -60,6 +60,12 @@ const VideoModal = ({ videoUrl, isOpen, onClose }: VideoModalProps) => {
     }
   };
 
+  const handleError = (error: any) => {
+    console.error('Video playback error:', error);
+    setHasError(true);
+    setIsLoading(false);
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -139,10 +145,20 @@ const VideoModal = ({ videoUrl, isOpen, onClose }: VideoModalProps) => {
           controls={true}
           volume={1}
           muted={false}
-          onReady={() => setIsLoading(false)}
-          onError={() => {
-            setHasError(true);
+          onReady={() => {
+            console.log('Video ready to play:', videoUrl);
             setIsLoading(false);
+          }}
+          onError={handleError}
+          config={{
+            vimeo: {
+              playerOptions: {
+                responsive: true,
+                autopause: false,
+                dnt: true,
+                playsinline: true
+              }
+            }
           }}
           style={{ borderRadius: '0.5rem', overflow: 'hidden' }}
         />
