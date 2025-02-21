@@ -2,7 +2,7 @@ import EducationList from "./education/EducationList";
 import ExperienceList from "./experience/ExperienceList";
 import ProjectList from "./projects/ProjectList";
 import TechWord from "../shared/TechWord";
-import { Server, Bot, Layout } from "lucide-react";
+import { Server, Bot, Layout, Database, Code, GitBranch } from "lucide-react";
 import Tag from "../shared/Tag";
 // Remove these imports for now until we create the components
 // import TechStack from "./TechStack";
@@ -18,10 +18,10 @@ const RightPanel = () => {
       >
         <h2 className="text-3xl font-semibold mb-8">What I'm Building Now</h2>
         <p>
-          Currently, at We Make Good Software (August 2024), I'm building an
-          AI-integrated messaging platform that processes large volumes of
-          messages and automates responses intelligently. Here's what I'm
-          focused on:
+          Currently, at <TechWord>We Make Good Software (August 2024)</TechWord>
+          , I'm building an AI-integrated messaging platform that processes
+          large volumes of messages and automates responses intelligently.
+          Here's what I'm focused on:
         </p>
         <div className="space-y-6">
           <div className="flex items-start gap-4">
@@ -65,9 +65,12 @@ const RightPanel = () => {
         <h2 className="text-3xl font-semibold mb-8">What I Work With</h2>
         <div className="space-y-8">
           <div>
-            <h3 className="text-xl font-medium text-slate-dark mb-4">
-              Backend Development
-            </h3>
+            <div className="flex items-center gap-2 mb-4">
+              <Database size={24} className="text-orange-primary" />
+              <h3 className="text-xl font-medium text-slate-dark">
+                Backend Development
+              </h3>
+            </div>
             <div className="flex flex-wrap gap-2">
               <Tag label="Java" />
               <Tag label="Spring Boot" />
@@ -76,9 +79,12 @@ const RightPanel = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-medium text-slate-dark mb-4">
-              Frontend Development
-            </h3>
+            <div className="flex items-center gap-2 mb-4">
+              <Code size={24} className="text-orange-primary" />
+              <h3 className="text-xl font-medium text-slate-dark">
+                Frontend Development
+              </h3>
+            </div>
             <div className="flex flex-wrap gap-2">
               <Tag label="React" />
               <Tag label="TypeScript" />
@@ -87,9 +93,12 @@ const RightPanel = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-medium text-slate-dark mb-4">
-              Professional Practices
-            </h3>
+            <div className="flex items-center gap-2 mb-4">
+              <GitBranch size={24} className="text-orange-primary" />
+              <h3 className="text-xl font-medium text-slate-dark">
+                Professional Practices
+              </h3>
+            </div>
             <div className="flex flex-wrap gap-2">
               <Tag label="Git" />
               <Tag label="Agile" />
