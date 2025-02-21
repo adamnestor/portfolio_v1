@@ -6,8 +6,8 @@ const RightPanel = () => {
   return (
     <div className="pt-16">
       {/* About section */}
-      <section id="about" className="text-slate-dark text-base space-y-4 mb-24">
-        <h2 className="text-2xl font-semibold mb-8">About</h2>
+      <section id="about" className="text-slate-dark text-lg space-y-6 mb-24">
+        <h2 className="text-3xl font-semibold mb-8">About</h2>
         <p>
           I'm a full-stack developer building applications with Java, Spring
           Boot, and React. Currently, I'm developing an AI-integrated messaging
@@ -38,19 +38,19 @@ const RightPanel = () => {
 
       {/* Projects Section */}
       <section id="projects" className="mb-24">
-        <h2 className="text-2xl font-semibold mb-8">Projects</h2>
+        <h2 className="text-3xl font-semibold mb-8">Projects</h2>
         <ProjectList />
       </section>
 
       {/* Experience Section */}
       <section id="experience" className="mb-24">
-        <h2 className="text-2xl font-semibold mb-8">Experience</h2>
+        <h2 className="text-3xl font-semibold mb-8">Experience</h2>
         <ExperienceList />
       </section>
 
       {/* Education Section */}
       <section id="education" className="mb-24">
-        <h2 className="text-2xl font-semibold mb-8">Education</h2>
+        <h2 className="text-3xl font-semibold mb-8">Education</h2>
         <EducationList />
       </section>
     </div>
