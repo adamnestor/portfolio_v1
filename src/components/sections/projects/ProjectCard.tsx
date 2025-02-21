@@ -21,15 +21,15 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
   return (
     <div className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover">
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <VideoThumbnail
           thumbnailImage={project.thumbnailImage}
           videoUrl={project.video}
           onPlayClick={() => setIsModalOpen(true)}
           title={project.title}
         />
-        <div className="flex-1">
-          <div className="flex items-center gap-4 mb-1">
+        <div className="flex-1 space-y-4">
+          <div className="flex items-center gap-4">
             <h3 className="text-slate-dark text-lg font-medium group-hover:text-orange-primary">
               {project.title}
             </h3>
@@ -49,22 +49,24 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               </ExternalLink>
             )}
           </div>
-          <p className="text-slate-dark text-base group-hover:text-slate-dark mb-4">
+          <p className="text-slate-dark text-lg">
             {project.description}
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 pt-2">
             {project.technologies.map((tech) => (
               <Tag key={tech} label={tech} />
             ))}
           </div>
         </div>
       </div>
-
-      <VideoModal
-        videoUrl={project.video}
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
+      
+      {isModalOpen && (
+        <VideoModal
+          videoUrl={project.video}
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
     </div>
   );
 };

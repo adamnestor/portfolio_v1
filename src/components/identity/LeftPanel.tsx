@@ -15,7 +15,7 @@ const LeftPanel = () => {
 
       <Navigation />
 
-      <div className="mt-auto pb-8 flex items-center gap-8">
+      <div className="md:mt-auto mt-12 pb-8 flex items-center gap-8">
         <SocialLinks links={socialLinks} />
         <ExternalLink
           href="/resume/AdamNestorResume.pdf"
