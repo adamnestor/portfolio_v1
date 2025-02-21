@@ -3,9 +3,8 @@ import ExperienceList from "./experience/ExperienceList";
 import ProjectList from "./projects/ProjectList";
 import TechWord from "../shared/TechWord";
 import { Server, Bot, Layout } from "lucide-react";
-// Remove Construction import since we're not using it
+import Tag from "../shared/Tag";
 // Remove these imports for now until we create the components
-// import Tag from "./Tag";
 // import TechStack from "./TechStack";
 // import Journey from "./Journey";
 
@@ -64,8 +63,40 @@ const RightPanel = () => {
       {/* What I Work With section */}
       <section id="work-with" className="mb-24">
         <h2 className="text-3xl font-semibold mb-8">What I Work With</h2>
-        {/* Temporarily remove TechStack component */}
-        <div>Coming soon...</div>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-medium text-slate-dark mb-4">
+              Backend Development
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <Tag label="Java" />
+              <Tag label="Spring Boot" />
+              <Tag label="MySQL" />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-medium text-slate-dark mb-4">
+              Frontend Development
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <Tag label="React" />
+              <Tag label="TypeScript" />
+              <Tag label="Tailwind CSS" />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-medium text-slate-dark mb-4">
+              Professional Practices
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <Tag label="Git" />
+              <Tag label="Agile" />
+              <Tag label="Test Driven Development" />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* What I've Built section */}
