@@ -16,9 +16,9 @@ export interface Profile {
 }
 
 export const profileData: Profile = {
-  name: "Adam Nestor",
-  title: "Full Stack Developer",
+  name: "Hi! 👋 I'm Adam Nestor.",
+  title: "Full Stack Developer | Java, SpringBoot, React",
   description:
-    "Building scalable software in Java and React, focused on clean code and clear thinking.",
+    "I'm a Cleveland-based developer with a passion for creating software that's both powerful and easy to understand.",
   imagePath: "/tempPic.jpg",
 };
