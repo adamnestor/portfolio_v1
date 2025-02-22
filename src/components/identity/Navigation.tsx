@@ -4,10 +4,10 @@ const Navigation = () => {
   const activeSection = useScrollSpy();
 
   const navItems = [
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "experience", label: "Experience" },
-    { id: "education", label: "Education" },
+    { id: "building-now", label: "What I'm Building Now" },
+    { id: "work-with", label: "What I Work With" },
+    { id: "built", label: "What I've Built" },
+    { id: "journey", label: "My Journey Here" },
   ];
 
   const handleNavClick = (id: string) => {

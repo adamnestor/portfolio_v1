@@ -9,13 +9,13 @@ const LeftPanel = () => {
     <div className="flex flex-col h-full pt-8">
       <Profile profile={profileData} />
 
-      <p className="text-slate-dark text-base mb-8">
+      <p className="text-slate-dark text-lg mb-8">
         {profileData.description}
       </p>
 
       <Navigation />
 
-      <div className="mt-auto pb-8 flex items-center gap-8">
+      <div className="md:mt-auto mt-12 pb-8 flex items-center gap-8">
         <SocialLinks links={socialLinks} />
         <ExternalLink
           href="/resume/AdamNestorResume.pdf"

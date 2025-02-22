@@ -16,7 +16,7 @@ const Profile = ({ profile }: ProfileProps) => {
       </div>
       <div>
         <h1 className="text-slate-dark text-4xl font-bold mb-1">{profile.name}</h1>
-        <h2 className="text-slate-medium text-xl">{profile.title}</h2>
+        <h2 className="text-slate-dark text-xl">{profile.title}</h2>
       </div>
     </div>
   );

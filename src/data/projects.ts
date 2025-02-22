@@ -1,6 +1,16 @@
 export interface Project {
   title: string;
   description: string;
+  keyFeatures: {
+    icon:
+      | "lineChart"
+      | "calculator"
+      | "barChart"
+      | "users"
+      | "shield"
+      | "clipboardCheck";
+    text: string;
+  }[];
   thumbnailImage: string; // Logo image
   video: string; // This will now be a Vimeo URL
   codeUrl: string;
@@ -12,7 +22,21 @@ export const projects: Project[] = [
   {
     title: "CourtVision",
     description:
-      "CourtVision analyzes NBA player statistics to predict game performance. The application shows historical hit rates for points, assists, and rebounds, then uses this data in a custom confidence score that weighs recent games, matchup history, and team dynamics to predict tonight's games. Users can view detailed player breakdowns with performance charts and track their prediction accuracy over time.",
+      "CourtVision analyzes NBA player statistics to predict game performance using custom confidence scores. Built with React, TypeScript, and Spring Boot, it provides real-time analytics through a responsive interface.",
+    keyFeatures: [
+      {
+        icon: "lineChart",
+        text: "Real-time dashboard showing historical hit rates and prediction accuracy",
+      },
+      {
+        icon: "calculator",
+        text: "Custom algorithm weighing recent games, matchups, and team dynamics",
+      },
+      {
+        icon: "barChart",
+        text: "Detailed player breakdowns with performance visualization",
+      },
+    ],
     thumbnailImage: "/thumbnails/courtvision-thumb.jpg",
     video: "https://vimeo.com/1058767374/b07463716e?share=copy",
     codeUrl: "https://github.com/adamnestor/courtvision-backend",
@@ -31,7 +55,21 @@ export const projects: Project[] = [
   {
     title: "ServiceTally",
     description:
-      "ServiceTally helps schools manage and track student service hours. Administrators can oversee multiple schools, approve submitted hours, and manage student-admin relationships through a custom interface. Students can submit their volunteer activities and monitor their progress, with all data securely filtered based on user roles. Built as a capstone project, the application features a responsive design created with vanilla JavaScript and CSS.",
+      "ServiceTally streamlines student service hour management with a multi-school platform built on Spring Boot and Hibernate, providing secure tracking, approving, and reporting of volunteer activities.",
+    keyFeatures: [
+      {
+        icon: "users",
+        text: "Multi-school dashboard for tracking and approving service hours",
+      },
+      {
+        icon: "shield",
+        text: "Role-based access control for students and administrators",
+      },
+      {
+        icon: "clipboardCheck",
+        text: "Progress tracking and reporting for student volunteer activities",
+      },
+    ],
     thumbnailImage: "/thumbnails/servicetally-thumb.jpg",
     video: "https://vimeo.com/1058767481/be7e5c809d?share=copy",
     link: "https://servicetally.up.railway.app",

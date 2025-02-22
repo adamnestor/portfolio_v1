@@ -1,41 +1,32 @@
 import { useEffect, useState } from "react";
 
 export const useScrollSpy = () => {
-  const [activeSection, setActiveSection] = useState<string>("about");
+  const [activeSection, setActiveSection] = useState<string>("building-now");
 
   useEffect(() => {
-    const sections = ["about", "projects", "experience", "education"]
-      .map((id) => document.getElementById(id))
-      .filter((section): section is HTMLElement => section !== null);
+    const handleScroll = () => {
+      const sections = ["building-now", "work-with", "built", "journey"]
+        .map((id) => document.getElementById(id))
+        .filter((section): section is HTMLElement => section !== null);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        // Get all visible sections
-        const visibleSections = entries.filter(entry => entry.isIntersecting);
-        
-        if (visibleSections.length > 0) {
-          // Get the section that is most visible
-          const mostVisible = visibleSections.reduce((prev, current) => {
-            return (prev.intersectionRatio > current.intersectionRatio) ? prev : current;
-          });
-          
-          setActiveSection(mostVisible.target.id);
-        }
-      },
-      {
-        root: null,
-        // Use multiple thresholds for more precise detection
-        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5],
-        // Adjust margins to better handle section transitions
-        rootMargin: "-20% 0px -20% 0px"
+      // Get the section closest to the top of the viewport
+      const current = sections.reduce((nearest, section) => {
+        const distance = Math.abs(section.getBoundingClientRect().top);
+        const nearestDistance = Math.abs(nearest.getBoundingClientRect().top);
+        return distance < nearestDistance ? section : nearest;
+      }, sections[0]);
+
+      if (current?.id) {
+        setActiveSection(current.id);
       }
-    );
+    };
 
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    // Add scroll listener
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return activeSection;
