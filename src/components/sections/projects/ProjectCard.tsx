@@ -4,19 +4,36 @@ import Tag from "../../shared/Tag";
 import ExternalLink from "../../shared/ExternalLink";
 import VideoThumbnail from "../../video/VideoThumbnail";
 import VideoModal from "../../video/VideoModal";
+import {
+  LineChart,
+  Calculator,
+  BarChart3,
+  Users,
+  Shield,
+  ClipboardCheck,
+} from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
 }
 
+const iconMap = {
+  lineChart: LineChart,
+  calculator: Calculator,
+  barChart: BarChart3,
+  users: Users,
+  shield: Shield,
+  clipboardCheck: ClipboardCheck,
+} as const;
+
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const getLinkLabel = (projectTitle: string, linkType: 'code' | 'link') => {
+  const getLinkLabel = (projectTitle: string, linkType: "code" | "link") => {
     if (projectTitle === "CourtVision") {
-      return linkType === 'code' ? "Backend Code" : "Frontend Code";
+      return linkType === "code" ? "Backend Code" : "Frontend Code";
     }
-    return linkType === 'code' ? "See Code" : "Live Demo";
+    return linkType === "code" ? "See Code" : "Live Demo";
   };
 
   return (
@@ -38,20 +55,40 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               className="text-slate-dark hover:text-orange-primary text-base font-medium"
               aria-label="View source code on GitHub"
             >
-              {getLinkLabel(project.title, 'code')}
+              {getLinkLabel(project.title, "code")}
             </ExternalLink>
             {project.link && (
               <ExternalLink
                 href={project.link}
                 className="text-slate-dark hover:text-orange-primary text-base font-medium"
               >
-                {getLinkLabel(project.title, 'link')}
+                {getLinkLabel(project.title, "link")}
               </ExternalLink>
             )}
           </div>
-          <p className="text-slate-dark text-lg">
-            {project.description}
-          </p>
+          <div className="space-y-6">
+            <p className="text-slate-dark text-base">{project.description}</p>
+
+            <div>
+              <h4 className="text-slate-dark font-medium mb-3">
+                Key features:
+              </h4>
+              <div className="space-y-4">
+                {project.keyFeatures.map((feature, index) => {
+                  const Icon = iconMap[feature.icon];
+                  return (
+                    <div key={index} className="flex items-start gap-3">
+                      <Icon
+                        size={20}
+                        className="text-orange-primary flex-shrink-0 mt-1"
+                      />
+                      <span className="text-slate-dark">{feature.text}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
           <div className="flex flex-wrap gap-2 pt-2">
             {project.technologies.map((tech) => (
               <Tag key={tech} label={tech} />
@@ -59,7 +96,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         </div>
       </div>
-      
+
       {isModalOpen && (
         <VideoModal
           videoUrl={project.video}
