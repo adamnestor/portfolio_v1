@@ -12,6 +12,7 @@ import {
   Shield,
   ClipboardCheck,
 } from "lucide-react";
+import TechWord from "../../shared/TechWord";
 
 interface ProjectCardProps {
   project: Project;
@@ -25,6 +26,30 @@ const iconMap = {
   shield: Shield,
   clipboardCheck: ClipboardCheck,
 } as const;
+
+const formatDescription = (description: string) => {
+  const techWords = [
+    "React",
+    "TypeScript",
+    "Spring Boot",
+    "Hibernate",
+    "Java",
+    "MySQL",
+    "Tailwind CSS",
+  ];
+
+  let formattedDesc = description;
+  techWords.forEach((word) => {
+    formattedDesc = formattedDesc.replace(
+      new RegExp(`\\b${word}\\b`, "g"),
+      `<TechWord>${word}</TechWord>`
+    );
+  });
+
+  return formattedDesc.split(/<TechWord>|<\/TechWord>/).map((part, index) => {
+    return index % 2 === 1 ? <TechWord key={index}>{part}</TechWord> : part;
+  });
+};
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -67,9 +92,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             )}
           </div>
           <div className="space-y-6">
-            <p className="text-slate-dark text-base">{project.description}</p>
+            <div className="rounded-lg bg-white p-6 shadow-sm">
+              <p className="text-slate-dark text-lg">
+                {formatDescription(project.description)}
+              </p>
+            </div>
 
-            <div>
+            <div className="rounded-lg bg-white p-6 shadow-sm">
               <h4 className="text-slate-dark font-medium mb-3">
                 Key features:
               </h4>
@@ -82,7 +111,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                         size={20}
                         className="text-orange-primary flex-shrink-0 mt-1"
                       />
-                      <span className="text-slate-dark">{feature.text}</span>
+                      <span className="text-slate-dark text-lg">
+                        {feature.text}
+                      </span>
                     </div>
                   );
                 })}

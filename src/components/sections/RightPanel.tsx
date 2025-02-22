@@ -10,8 +10,6 @@ import {
   Brain,
   Users,
   Puzzle,
-  ChartBar,
-  BookOpen,
 } from "lucide-react";
 import Tag from "../shared/Tag";
 
@@ -40,7 +38,7 @@ const RightPanel = () => {
               Architecting a <TechWord>Java</TechWord>/
               <TechWord>Spring Boot</TechWord> backend that manages message flow
               and integrates with <TechWord>Twilio</TechWord> for reliable SMS
-              delivery and tracking
+              delivery and tracking using <TechWord>RESTful APIs</TechWord>
             </div>
           </div>
 
@@ -48,8 +46,8 @@ const RightPanel = () => {
             <Bot size={24} className="text-orange-primary flex-shrink-0 mt-1" />
             <div>
               Working with our AI team to implement automated response systems,
-              using <TechWord>Spring Boot</TechWord>'s reactive capabilities for
-              efficient processing
+              using <TechWord>Spring Boot</TechWord>'s reactive capabilities and{" "}
+              <TechWord>MySQL</TechWord> for efficient processing
             </div>
           </div>
 
@@ -59,9 +57,10 @@ const RightPanel = () => {
               className="text-orange-primary flex-shrink-0 mt-1"
             />
             <div>
-              Creating an intuitive <TechWord>React</TechWord> frontend that
-              gives course creators real-time visibility into their message
-              flows and analytics
+              Creating an intuitive <TechWord>React</TechWord> +{" "}
+              <TechWord>TypeScript</TechWord> frontend with{" "}
+              <TechWord>Tailwind CSS</TechWord> that gives course creators
+              real-time visibility into their message flows and analytics
             </div>
           </div>
         </div>
@@ -168,14 +167,14 @@ const RightPanel = () => {
                 </h4>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <ChartBar
+                    <Puzzle
                       size={18}
                       className="text-orange-primary flex-shrink-0 mt-1"
                     />
                     <span>Studied how the human body works through data</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <BookOpen
+                    <Puzzle
                       size={18}
                       className="text-orange-primary flex-shrink-0 mt-1"
                     />
@@ -291,7 +290,8 @@ const RightPanel = () => {
                       className="text-orange-primary flex-shrink-0 mt-1"
                     />
                     <span>
-                      Built real applications with Java and Spring Boot
+                      Built real applications with <TechWord>Java</TechWord> and{" "}
+                      <TechWord>Spring Boot</TechWord>
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
@@ -306,7 +306,11 @@ const RightPanel = () => {
                       size={18}
                       className="text-orange-primary flex-shrink-0 mt-1"
                     />
-                    <span>Learned modern coding practices</span>
+                    <span>
+                      Learned modern coding practices like{" "}
+                      <TechWord>Test Driven Development</TechWord> and{" "}
+                      <TechWord>Git</TechWord> workflows
+                    </span>
                   </div>
                 </div>
               </div>

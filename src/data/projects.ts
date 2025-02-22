@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     title: "CourtVision",
     description:
-      "CourtVision analyzes NBA player statistics to predict game performance using custom confidence scores.",
+      "CourtVision analyzes NBA player statistics to predict game performance using custom confidence scores. Built with React, TypeScript, and Spring Boot, it provides real-time analytics through a responsive interface.",
     keyFeatures: [
       {
         icon: "lineChart",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
   {
     title: "ServiceTally",
     description:
-      "ServiceTally streamlines student service hour management with a multi-school platform for tracking, approving, and reporting volunteer activities.",
+      "ServiceTally streamlines student service hour management with a multi-school platform built on Spring Boot and Hibernate, providing secure tracking, approving, and reporting of volunteer activities.",
     keyFeatures: [
       {
         icon: "users",
