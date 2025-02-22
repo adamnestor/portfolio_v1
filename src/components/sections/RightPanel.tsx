@@ -118,14 +118,16 @@ const RightPanel = () => {
       {/* What I've Built section */}
       <section id="built" className="mb-24">
         <h2 className="text-3xl font-semibold mb-8">What I've Built</h2>
-        <ProjectList />
+        <div className="text-lg">
+          <ProjectList />
+        </div>
       </section>
 
       {/* My Journey Here section */}
       <section id="journey" className="mb-24">
         <h2 className="text-3xl font-semibold mb-8">My Journey Here</h2>
 
-        <div className="space-y-8 text-slate-dark">
+        <div className="space-y-8 text-slate-dark text-lg">
           {/* The Foundation */}
           <div className="block group hover:bg-orange-light rounded-lg p-6 -m-6 transition-colors shadow-card hover:shadow-card-hover">
             <h3 className="text-xl font-semibold mb-8 flex items-center gap-2">
