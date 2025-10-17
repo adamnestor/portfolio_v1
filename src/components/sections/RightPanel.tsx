@@ -1,15 +1,6 @@
 import ProjectList from "./projects/ProjectList";
 import TechWord from "../shared/TechWord";
-import {
-  Layout,
-  Wrench,
-  Database,
-  Code,
-  GitBranch,
-  Brain,
-  Users,
-  Puzzle,
-} from "lucide-react";
+import { Layout, Wrench, Database, Code, GitBranch, Users } from "lucide-react";
 import Tag from "../shared/Tag";
 
 const RightPanel = () => {
@@ -139,203 +130,98 @@ const RightPanel = () => {
       {/* My Journey Here section */}
       <section id="journey" className="mb-24">
         <h2 className="text-3xl font-semibold mb-8">My Journey Here</h2>
-
         <div className="space-y-8 text-slate-dark text-lg">
-          {/* The Foundation */}
-          <div className="block group hover:bg-orange-light rounded-lg p-6 -m-6 transition-colors shadow-card hover:shadow-card-hover">
-            <h3 className="text-xl font-semibold mb-8 flex items-center gap-2">
-              <Brain size={24} className="text-orange-primary" />
-              The Foundation
-            </h3>
+          <p>
+            Before writing code, I taught high school for five years. That
+            experience taught me how to break down complex ideas, ask the right
+            questions, and explain things clearly - skills that turn out to be
+            just as valuable in software engineering as they are in a classroom.
+          </p>
 
-            <div className="space-y-8">
-              <div className="rounded-lg bg-white p-6 shadow-sm">
-                <h4 className="text-lg font-medium mb-4">
-                  B.A. in Philosophy from The University of Akron (2010)
-                </h4>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Learned how to think logically and solve problems
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Brain
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Got really good at breaking down complicated ideas
-                    </span>
-                  </div>
-                </div>
-              </div>
+          <p>
+            In 2023, I made the jump into software development through Coders
+            Campus's full-stack Java bootcamp. The transition hasn't always been
+            smooth - there's been plenty of head-scratching moments with Spring
+            Boot's "magic" or Docker containers that work perfectly on my
+            machine but nowhere else. But my teaching background gives me a
+            unique perspective:{" "}
+            <strong>
+              every bug is just another opportunity to learn something new
+            </strong>
+            .
+          </p>
 
-              <div className="rounded-lg bg-white p-6 shadow-sm">
-                <h4 className="text-lg font-medium mb-4">
-                  M.S. in Education/Exercise Physiology (2012)
-                </h4>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>Studied how the human body works through data</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Found ways to make complex science understandable
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <p>
+            After every interview, every code review, every production incident
+            - I'm genuinely a better developer. That growth mindset is how I
+            picked up Node.js/Express at Square despite my background being
+            entirely in Java and Spring Boot.
+          </p>
+
+          <div className="flex items-center gap-2 mt-12 mb-4">
+            <Code size={24} className="text-orange-primary" />
+            <h3 className="text-2xl font-semibold">How I Work</h3>
           </div>
 
-          {/* Teaching & Leadership */}
-          <div className="block group hover:bg-orange-light rounded-lg p-6 -m-6 transition-colors shadow-card hover:shadow-card-hover">
-            <h3 className="text-xl font-semibold mb-8 flex items-center gap-2">
-              <Users size={24} className="text-orange-primary" />
-              Teaching & Leadership (2016-2024)
-            </h3>
+          <p>
+            I believe in understanding the "why" before jumping to solutions.
+            When something breaks in production, I want to know why it broke and
+            how to prevent that entire class of problems. My teaching background
+            means I ask a lot of questions - I'd rather spend time clarifying
+            requirements than build the wrong thing efficiently.
+          </p>
 
-            <div className="space-y-8">
-              <div className="rounded-lg bg-white p-6 shadow-sm">
-                <h4 className="text-lg font-medium mb-4">
-                  Director of Youth Ministry (2016-2020)
-                </h4>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Led weekly programs and events for 350+ youth participants
-                      and 65+ volunteers
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Ran multiple weekly programs as the main presenter
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Built systems to keep everything organized and running
-                      smoothly
-                    </span>
-                  </div>
-                </div>
-              </div>
+          <p>
+            I write tests because catching bugs early beats debugging at 2am.
+            And I believe in leaving code better than I found it - whether
+            that's refactoring a confusing method, adding documentation that
+            explains the "why," or fixing that typo everyone's been living with.
+          </p>
 
-              <div className="rounded-lg bg-white p-6 shadow-sm">
-                <h4 className="text-lg font-medium mb-4">
-                  High School Teacher (2020-2024)
-                </h4>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Made difficult concepts easy to understand through daily
-                      lessons
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Found creative ways to check if students really got it
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Created an environment where asking questions was
-                      encouraged
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="flex items-center gap-2 mt-12 mb-4">
+            <Users size={24} className="text-orange-primary" />
+            <h3 className="text-2xl font-semibold">What I'm Looking For</h3>
           </div>
 
-          {/* Transition to Tech */}
-          <div className="block group hover:bg-orange-light rounded-lg p-6 -m-6 transition-colors shadow-card hover:shadow-card-hover">
-            <h3 className="text-xl font-semibold mb-8 flex items-center gap-2">
-              <Code size={24} className="text-orange-primary" />
-              Transition to Tech (2023-2024)
-            </h3>
+          <p className="mb-4">
+            I'm looking for my next role on an established team where I can:
+          </p>
 
-            <div className="space-y-8">
-              <div className="rounded-lg bg-white p-6 shadow-sm">
-                <h4 className="text-lg font-medium mb-4">
-                  Coders Campus Bootcamp
-                </h4>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Built real applications with <TechWord>Java</TechWord> and{" "}
-                      <TechWord>Spring Boot</TechWord>
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>Created solutions for actual problems</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Puzzle
-                      size={18}
-                      className="text-orange-primary flex-shrink-0 mt-1"
-                    />
-                    <span>
-                      Learned modern coding practices like{" "}
-                      <TechWord>Test Driven Development</TechWord> and{" "}
-                      <TechWord>Git</TechWord> workflows
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ul className="space-y-3 ml-6">
+            <li className="flex items-start gap-3">
+              <span className="text-orange-primary mt-1">•</span>
+              <span>
+                Contribute my Java/Spring Boot expertise while learning from
+                people who are better than me at things
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-orange-primary mt-1">•</span>
+              <span>
+                Work with teams that value clear communication and documentation
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-orange-primary mt-1">•</span>
+              <span>
+                Collaborate where we learn from each other and everyone
+                contributes to collective growth
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-orange-primary mt-1">•</span>
+              <span>
+                Build things that matter - products people actually use
+              </span>
+            </li>
+          </ul>
+
+          <p className="mt-8 text-slate-medium">
+            <strong>Education:</strong> Coders Campus Full-Stack Java Bootcamp
+            (2023) • University of Akron M.S. Education (2012), B.A. Philosophy
+            (2010)
+          </p>
         </div>
-
-        <p className="text-slate-dark mt-12 text-lg">
-          I bring this unique mix of problem-solving, clear communication, and
-          technical skills to every project I work on.
-        </p>
       </section>
     </div>
   );
