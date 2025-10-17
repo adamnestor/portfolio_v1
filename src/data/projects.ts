@@ -16,8 +16,7 @@ export interface Project {
       | "database";
     text: string;
   }[];
-  thumbnailImage: string;
-  video?: string;
+  logoImage?: string;
   codeUrl?: string;
   link?: string;
   technologies: string[];
@@ -44,7 +43,7 @@ export const projects: Project[] = [
         text: "Implemented PostgreSQL database schema with JPA/Hibernate, optimizing queries for high write volumes across distributed microservices",
       },
     ],
-    thumbnailImage: "/thumbnails/wmgs-thumb.jpg",
+    logoImage: "/logos/wmgs-logo.png",
     link: "https://www.yeahapp.com/",
     technologies: [
       "Java",
@@ -77,8 +76,7 @@ export const projects: Project[] = [
         text: "Built normalized MySQL database schema with JPA/Hibernate ORM and optimized indexing, ensuring sub-second query times despite large dataset volume",
       },
     ],
-    thumbnailImage: "/thumbnails/courtvision-thumb.jpg",
-    video: "https://vimeo.com/1058767374/b07463716e?share=copy",
+    logoImage: "/logos/courtvision-logo.png",
     codeUrl: "https://github.com/adamnestor/courtvision-backend",
     link: "https://github.com/adamnestor/courtvision-frontend-v2",
     technologies: [

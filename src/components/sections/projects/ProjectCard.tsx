@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { Project } from "../../../data/projects";
 import Tag from "../../shared/Tag";
 import ExternalLink from "../../shared/ExternalLink";
-import VideoThumbnail from "../../video/VideoThumbnail";
-import VideoModal from "../../video/VideoModal";
 import {
   LineChart,
   Calculator,
@@ -11,9 +8,9 @@ import {
   Users,
   Shield,
   ClipboardCheck,
-  Server, // NEW
-  MessageSquare, // NEW
-  Database, // NEW
+  Server,
+  MessageSquare,
+  Database,
 } from "lucide-react";
 import TechWord from "../../shared/TechWord";
 
@@ -28,9 +25,9 @@ const iconMap = {
   users: Users,
   shield: Shield,
   clipboardCheck: ClipboardCheck,
-  server: Server, // NEW
-  messageSquare: MessageSquare, // NEW
-  database: Database, // NEW
+  server: Server,
+  messageSquare: MessageSquare,
+  database: Database,
 } as const;
 
 const formatDescription = (description: string) => {
@@ -41,7 +38,7 @@ const formatDescription = (description: string) => {
     "Hibernate",
     "Java",
     "MySQL",
-    "PostgreSQL", // Added
+    "PostgreSQL",
     "Tailwind CSS",
   ];
 
@@ -59,14 +56,12 @@ const formatDescription = (description: string) => {
 };
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const getLinkLabel = (projectTitle: string, linkType: "code" | "link") => {
     if (projectTitle === "CourtVision") {
       return linkType === "code" ? "Backend Code" : "Frontend Code";
     }
     if (projectTitle === "We Make Good Software") {
-      return "Live Product"; // Only one link for WMGS
+      return "Live Product";
     }
     return linkType === "code" ? "See Code" : "Live Demo";
   };
@@ -74,14 +69,15 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover">
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Only show video thumbnail if video exists */}
-        {project.video && project.thumbnailImage && (
-          <VideoThumbnail
-            thumbnailImage={project.thumbnailImage}
-            videoUrl={project.video}
-            onPlayClick={() => setIsModalOpen(true)}
-            title={project.title}
-          />
+        {/* Simple Logo Display */}
+        {project.logoImage && (
+          <div className="w-28 h-20 rounded overflow-hidden bg-white flex items-center justify-center flex-shrink-0">
+            <img
+              src={project.logoImage}
+              alt={`${project.title} logo`}
+              className="w-full h-full object-contain p-3"
+            />
+          </div>
         )}
         <div className="flex-1 space-y-4">
           <div>
@@ -90,7 +86,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 {project.title}
               </h3>
             </div>
-            {/* NEW: Display type and dateRange */}
+            {/* Display type and dateRange */}
             <div className="text-slate-medium text-sm mb-3">
               {project.type === "professional" ? (
                 <span>Professional Work • {project.dateRange}</span>
@@ -155,15 +151,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         </div>
       </div>
-
-      {/* Only render video modal if video exists */}
-      {isModalOpen && project.video && (
-        <VideoModal
-          videoUrl={project.video}
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
-        />
-      )}
     </div>
   );
 };
