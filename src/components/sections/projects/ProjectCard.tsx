@@ -11,6 +11,9 @@ import {
   Users,
   Shield,
   ClipboardCheck,
+  Server, // NEW
+  MessageSquare, // NEW
+  Database, // NEW
 } from "lucide-react";
 import TechWord from "../../shared/TechWord";
 
@@ -25,6 +28,9 @@ const iconMap = {
   users: Users,
   shield: Shield,
   clipboardCheck: ClipboardCheck,
+  server: Server, // NEW
+  messageSquare: MessageSquare, // NEW
+  database: Database, // NEW
 } as const;
 
 const formatDescription = (description: string) => {
@@ -35,6 +41,7 @@ const formatDescription = (description: string) => {
     "Hibernate",
     "Java",
     "MySQL",
+    "PostgreSQL", // Added
     "Tailwind CSS",
   ];
 
@@ -58,38 +65,59 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     if (projectTitle === "CourtVision") {
       return linkType === "code" ? "Backend Code" : "Frontend Code";
     }
+    if (projectTitle === "We Make Good Software") {
+      return "Live Product"; // Only one link for WMGS
+    }
     return linkType === "code" ? "See Code" : "Live Demo";
   };
 
   return (
     <div className="block group hover:bg-orange-light rounded-lg p-4 -m-4 transition-colors shadow-card hover:shadow-card-hover">
       <div className="flex flex-col md:flex-row gap-6">
-        <VideoThumbnail
-          thumbnailImage={project.thumbnailImage}
-          videoUrl={project.video}
-          onPlayClick={() => setIsModalOpen(true)}
-          title={project.title}
-        />
+        {/* Only show video thumbnail if video exists */}
+        {project.video && project.thumbnailImage && (
+          <VideoThumbnail
+            thumbnailImage={project.thumbnailImage}
+            videoUrl={project.video}
+            onPlayClick={() => setIsModalOpen(true)}
+            title={project.title}
+          />
+        )}
         <div className="flex-1 space-y-4">
-          <div className="flex items-center gap-4">
-            <h3 className="text-slate-dark text-lg font-medium group-hover:text-orange-primary">
-              {project.title}
-            </h3>
-            <ExternalLink
-              href={project.codeUrl}
-              className="text-slate-dark hover:text-orange-primary text-base font-medium"
-              aria-label="View source code on GitHub"
-            >
-              {getLinkLabel(project.title, "code")}
-            </ExternalLink>
-            {project.link && (
-              <ExternalLink
-                href={project.link}
-                className="text-slate-dark hover:text-orange-primary text-base font-medium"
-              >
-                {getLinkLabel(project.title, "link")}
-              </ExternalLink>
-            )}
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <h3 className="text-slate-dark text-lg font-medium group-hover:text-orange-primary">
+                {project.title}
+              </h3>
+            </div>
+            {/* NEW: Display type and dateRange */}
+            <div className="text-slate-medium text-sm mb-3">
+              {project.type === "professional" ? (
+                <span>Professional Work • {project.dateRange}</span>
+              ) : (
+                <span>Personal Project</span>
+              )}
+            </div>
+            {/* Links - conditionally render code link */}
+            <div className="flex items-center gap-4">
+              {project.codeUrl && (
+                <ExternalLink
+                  href={project.codeUrl}
+                  className="text-slate-dark hover:text-orange-primary text-base font-medium"
+                  aria-label="View source code on GitHub"
+                >
+                  {getLinkLabel(project.title, "code")}
+                </ExternalLink>
+              )}
+              {project.link && (
+                <ExternalLink
+                  href={project.link}
+                  className="text-slate-dark hover:text-orange-primary text-base font-medium"
+                >
+                  {getLinkLabel(project.title, "link")}
+                </ExternalLink>
+              )}
+            </div>
           </div>
           <div className="space-y-6">
             <div className="rounded-lg bg-white p-6 shadow-sm">
@@ -128,7 +156,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </div>
       </div>
 
-      {isModalOpen && (
+      {/* Only render video modal if video exists */}
+      {isModalOpen && project.video && (
         <VideoModal
           videoUrl={project.video}
           isOpen={isModalOpen}

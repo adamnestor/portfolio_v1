@@ -22,8 +22,15 @@ const RightPanel = () => {
       >
         <h2 className="text-3xl font-semibold mb-8">What I'm Building Now</h2>
         <p>
-          Currently, at <TechWord>Square (March 2025)</TechWord>
-          , an edtech company, I'm working with <TechWord>TypeScript, Express.js, PostgreSQL, and React</TechWord> to build full-stack applications for learning platforms. This role has stretched me beyond my <TechWord>Java/Spring Boot</TechWord> expertise into the <TechWord>Node.js</TechWord> ecosystem, demonstrating my ability to quickly learn new technologies and adapt to different tech stacks. My focus has been on improving student learning experience through better content accessibility.
+          Currently, at <TechWord>Square (March 2025)</TechWord>, an edtech
+          company, I'm working with{" "}
+          <TechWord>TypeScript, Express.js, PostgreSQL, and React</TechWord> to
+          build full-stack applications for learning platforms. This role has
+          stretched me beyond my <TechWord>Java/Spring Boot</TechWord> expertise
+          into the <TechWord>Node.js</TechWord> ecosystem, demonstrating my
+          ability to quickly learn new technologies and adapt to different tech
+          stacks. My focus has been on improving student learning experience
+          through better content accessibility.
         </p>
         <div className="space-y-6">
           <div className="flex items-start gap-4">
@@ -32,14 +39,23 @@ const RightPanel = () => {
               className="text-orange-primary flex-shrink-0 mt-1"
             />
             <div>
-              Built a review catalog feature allowing students to browse and study all their learning materials on-demand, complementing the existing spaced-repetition system by giving students full visibility and control over their entire review library.
+              Built a review catalog feature allowing students to browse and
+              study all their learning materials on-demand, complementing the
+              existing spaced-repetition system by giving students full
+              visibility and control over their entire review library.
             </div>
           </div>
 
           <div className="flex items-start gap-4">
-            <Database size={24} className="text-orange-primary flex-shrink-0 mt-1" />
+            <Database
+              size={24}
+              className="text-orange-primary flex-shrink-0 mt-1"
+            />
             <div>
-              Architected <TechWord>RESTful APIs</TechWord> with <TechWord>Express</TechWord> and <TechWord>PostgreSQL</TechWord> to retrieve, filter, and organize review items, enabling students to search and navigate their entire learning history.
+              Architected <TechWord>RESTful APIs</TechWord> with{" "}
+              <TechWord>Express</TechWord> and <TechWord>PostgreSQL</TechWord>{" "}
+              to retrieve, filter, and organize review items, enabling students
+              to search and navigate their entire learning history.
             </div>
           </div>
 
@@ -49,7 +65,9 @@ const RightPanel = () => {
               className="text-orange-primary flex-shrink-0 mt-1"
             />
             <div>
-              Resolved critical production issues during legacy system migrations by restructuring API contracts between frontend and backend, implementing permanent solutions to prevent recurrence.
+              Resolved critical production issues during legacy system
+              migrations by restructuring API contracts between frontend and
+              backend, implementing permanent solutions to prevent recurrence.
             </div>
           </div>
         </div>
@@ -112,7 +130,7 @@ const RightPanel = () => {
 
       {/* What I've Built section */}
       <section id="built" className="mb-24">
-        <h2 className="text-3xl font-semibold mb-8">What I've Built</h2>
+        <h2 className="text-3xl font-semibold mb-8">Previous Experience</h2>
         <div className="text-lg">
           <ProjectList />
         </div>
