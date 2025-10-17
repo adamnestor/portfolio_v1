@@ -69,7 +69,11 @@ const RightPanel = () => {
             <div className="flex flex-wrap gap-2">
               <Tag label="Java" />
               <Tag label="Spring Boot" />
+              <Tag label="Node.js" />
+              <Tag label="Express.js" />
+              <Tag label="PostgresSQL" />
               <Tag label="MySQL" />
+              <Tag label="JPA/Hibernate" />
             </div>
           </div>
 
@@ -83,6 +87,7 @@ const RightPanel = () => {
             <div className="flex flex-wrap gap-2">
               <Tag label="React" />
               <Tag label="TypeScript" />
+              <Tag label="JavaScript" />
               <Tag label="Tailwind CSS" />
             </div>
           </div>
@@ -95,9 +100,11 @@ const RightPanel = () => {
               </h3>
             </div>
             <div className="flex flex-wrap gap-2">
+              <Tag label="RESTful APIs" />
+              <Tag label="Docker" />
               <Tag label="Git" />
-              <Tag label="Agile" />
               <Tag label="Test Driven Development" />
+              <Tag label="Agile/Scrum" />
             </div>
           </div>
         </div>
