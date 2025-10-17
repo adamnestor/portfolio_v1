@@ -6,7 +6,7 @@ const Navigation = () => {
   const navItems = [
     { id: "building-now", label: "What I'm Building Now" },
     { id: "work-with", label: "What I Work With" },
-    { id: "built", label: "What I've Built" },
+    { id: "built", label: "Previous Experience" },
     { id: "journey", label: "My Journey Here" },
   ];
 
