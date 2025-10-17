@@ -16,8 +16,8 @@ export interface Project {
       | "database";
     text: string;
   }[];
-  thumbnailImage: string; 
-  video?: string; 
+  thumbnailImage: string;
+  video?: string;
   codeUrl?: string;
   link?: string;
   technologies: string[];
