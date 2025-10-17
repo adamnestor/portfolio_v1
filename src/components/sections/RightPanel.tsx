@@ -80,7 +80,7 @@ const RightPanel = () => {
               <Tag label="Spring Boot" />
               <Tag label="Node.js" />
               <Tag label="Express.js" />
-              <Tag label="PostgresSQL" />
+              <Tag label="PostgreSQL" />
               <Tag label="MySQL" />
               <Tag label="JPA/Hibernate" />
             </div>
