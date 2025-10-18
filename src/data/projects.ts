@@ -54,7 +54,6 @@ export const projects: Project[] = [
       "JPA/Hibernate",
       "Twilio API",
       "Anthropic Claude API",
-      "Docker",
     ],
   },
   {
@@ -88,7 +87,6 @@ export const projects: Project[] = [
       "JPA/Hibernate",
       "Spring Security",
       "JWT",
-      "Docker",
       "Tailwind CSS",
     ],
   },
